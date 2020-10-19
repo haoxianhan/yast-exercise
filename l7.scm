@@ -27,7 +27,7 @@
         (begin (write-char c to-p)
                (loop (read-char from-p)))))))
 
-(my-copy-file "l7.txt" "tl7.txt.bak")
+(my-copy-file "l7.txt" "l7.txt.bak")
 
 ; 练习3
 ; 编写函数(print-line)，该函数具有任意多的字符作为参数，并将它们输出至标准输出。输出的字符应该用新行分隔。
