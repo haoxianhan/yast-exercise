@@ -32,3 +32,17 @@
 
 (cdr '(1 . 2))
 
+(define cc)
+(* 3 (* 3 (call/cc (lambda (k)
+                     (set! cc k)
+                     (+ 1 2)))))
+
+
+(define (p) (p))
+(define (test x y)
+  (if (= x 0)
+    0
+    y))
+
+(test 0 (p))
+
